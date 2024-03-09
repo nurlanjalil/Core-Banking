@@ -11,7 +11,7 @@ create or replace procedure cb_customers_insert
 is
 begin
   insert into cb_customers(first_name, last_name, birth_date, gender)
-  values ((p_first_name, p_last_name, p_birth_date, p_gender)
+  values (p_first_name, p_last_name, p_birth_date, p_gender);
   commit;
 end;
 
